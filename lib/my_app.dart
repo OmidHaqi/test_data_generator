@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:test_data_gen/views/pages/my_splash.dart';
 import 'package:test_data_gen/views/res/themes.dart';
-import 'package:window_manager/window_manager.dart';
 
 class MyApp extends StatefulWidget {
   final AdaptiveThemeMode? savedThemeMode;
