@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Padding(
               padding: EdgeInsets.fromLTRB(
-                  sizeW / 19.65, sizeH / 25, sizeW / 19.65, 0),
+                  sizeW / 19.65, sizeH / 60, sizeW / 19.65, 0),
               child: Row(
                 children: [
                   const Expanded(
