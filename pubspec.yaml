@@ -1,0 +1,51 @@
+name: test_data_gen
+description: "cross platform test data generator application"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  adaptive_theme: ^3.5.0
+  connectivity_plus: ^5.0.2
+  cupertino_icons: ^1.0.2
+  dio: ^5.4.0
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  flutter_spinkit: ^5.2.0
+  http: ^1.1.2
+  msix: ^3.16.7
+  share_plus: ^7.2.1
+  window_manager: ^0.3.8
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: assets/fonts/ubuntu_regular.ttf
+        - asset: assets/fonts/ubuntu_bold.ttf
+        - asset: assets/fonts/ubuntu_light.ttf
+
+msix_config:
+  display_name: TDG
+  publisher_display_name: pezhvak
+  identity_name: pezhvak.testdatagenerator
+  msix_version: 1.0.0.0
+  logo_path: C:\Users\umuth\Pictures\logo.png
+  capabilities: internetClient
+  certificate_path: C:\Users\umuth\CERTIFICATETDG.pfx
+  certificate_password: C0nFirm!!
