@@ -123,10 +123,14 @@ class _InputConditionState extends State<InputCondition> {
 
     if (response.statusCode == 200) {
       Map<String, dynamic> responseBody = json.decode(response.body);
-
+      
+      
       Map<String, dynamic> result = responseBody["result"];
+      double time= responseBody["time"];
+      String icon = responseBody["algorithm_icon"];
+      
 
-      result.forEach((key, value) {
+      responseBody.forEach((key, value) {
         print("Results: $key=$value");
 
         Navigator.pop(context);
@@ -134,8 +138,9 @@ class _InputConditionState extends State<InputCondition> {
           context,
           CupertinoPageRoute(
             builder: (context) => OutPutPage(
+              time: time,
               result: result,
-              icon: widget.icon!,
+              icon: icon,
             ),
           ),
         );
