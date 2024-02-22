@@ -158,8 +158,9 @@ class _InputConditionState extends State<InputCondition> {
     controllers.add(TextEditingController());
   }
 
-  removeTextField() {
-    controllers.remove(controllers.last);
+  removeTextField(int i) {
+    controllers.removeAt(i);
+   
   }
 
   @override
@@ -259,7 +260,7 @@ class _InputConditionState extends State<InputCondition> {
                                   ? InkWell(
                                       onTap: () {
                                         setState(() {
-                                          removeTextField();
+                                          removeTextField(i);
                                         });
                                       },
                                       child: const Icon(
